@@ -5,7 +5,10 @@ body {
   text-align: center;
   background: #3B418F;
 }
-
+a {
+    text-decoration: none;
+    color: black;
+}
 ul {
   text-align: left;
   display: inline;
