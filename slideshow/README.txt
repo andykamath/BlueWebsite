@@ -21,8 +21,8 @@ You also need to include the following, which initializes Basic jQuery Slider:
   <script>
   $(function() {
     $('#imageslider').bjqs({
-      width: 680,
-      height: 340,
+      width: 800,
+      height: 380,
       animtype: 'fade',
       responsive: false,
       automatic: true,
@@ -48,6 +48,12 @@ Place this where you want the slider to appear, in the body of your page:
       </li>
       <li class="slide-3">
         <div class="caption">Slide 3 Caption</div>
+      </li>
+      <li class="slide-4">
+        <div class="caption">Slide 4 Caption</div>
+      </li>
+      <li class="slide-5">
+        <div class="caption">Slide 5 Caption</div>
       </li>
     </ul>
   </div>
