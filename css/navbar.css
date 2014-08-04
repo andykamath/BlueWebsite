@@ -73,3 +73,8 @@ ul li:hover ul {
   opacity: 1;
   visibility: visible;
 }
+
+#navbar
+{
+  z-index:1000;
+}
