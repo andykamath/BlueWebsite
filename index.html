@@ -9,31 +9,14 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/carousel.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link type='text/css' rel='Stylesheet' href='slideshow/css/imageslidermaker.css' />
-  <link type='text/css' rel='Stylesheet' href='http://fonts.googleapis.com/css?family=Titillium+Web:300,400'>
-  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
-  <script src='slideshow/js/bjqs-1.3-imageslidermaker.js'></script>
-<script>
-  $(function() {
-    $('#imageslider').bjqs({
-      width: 800,
-      height: 380,
-      animtype: 'fade',
-      responsive: false,
-      automatic: true,
-      keyboardnav: false,
-      markertype: '1',
-      prevtext: 'Prev',
-      nexttext: 'Next'
-    });
-  });
-  </script>
-
-      
-
-		<!-- Meta tags -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        
+<!-- Meta tags -->
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 		<meta name = "description" content = "Blue Restaurant & Bar, Best Mediterranean Restaurant in Charlotte, North Carolina, Award Winning Restaurant, Best Uptown Dining Restaurant, Wine Awards.">
 		<meta name = "keywords" content = "fine dining, Mediterranean, cuisine, Blue, Charlotte, North Carolina, elegant, stylish, Award Winning Restaurant, Best Wine List, Best Live Jazz">
@@ -41,7 +24,7 @@
 	</head>
 
 	<body>
-		<!-- Sidebar -->
+		<!-- Navbar -->
 		<ul class  = "animated fadeInUp" id = "navbar">
 			<li><a href="index.html">Home</a></li>
   			<li><a href = "about.html">About</a></li>
@@ -80,25 +63,41 @@
 
 <!--End Navbar -->        
 <br>
-  <div id="imageslider">
-    <ul class="bjqs">
-      <li class="slide-1">
-        <div class="caption">Slide 1 Caption</div>
-      </li>
-      <li class="slide-2">
-        <div class="caption">Slide 2 Caption</div>
-      </li>
-      <li class="slide-3">
-        <div class="caption">Slide 3 Caption</div>
-      </li>
-      <li class="slide-4">
-        <div class="caption">Slide 4 Caption</div>
-      </li>
-      <li class="slide-5">
-        <div class="caption">Slide 5 Caption</div>
-      </li>
-    </ul>
-  </div>
+<br> 
+<div id="slideshow" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>s
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#slideshow" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#slideshow" data-slide="next">&rsaquo;</a>
+</div>
+        <!-- /.carousel -->
+        
 
     <br>
     <br>
@@ -128,7 +127,13 @@ Friday & Saturday 5:00pm - 11:00pm</p>
 		<script type="text/javascript" src = "js/scrolling.js"></script> 
 		<script type="text/javascript" src = "js/sidebar.js"></script>
 		<script type="text/javascript" src = "js/stuff.js">new stuff.init();</script>
-
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2500
+    });
+  });
+</script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
     </script>
 	</body>
