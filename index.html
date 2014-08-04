@@ -1,20 +1,22 @@
 <!DOCTYPE html>
-<!--Published this version to gh-pages-->
 <html>
 	<head>
 		<!-- Get a hold of yourself, it's just a title -->
 		<title>Blue Restarant &middot; Charlotte, NC</title>
-
+<!--arbitrary line of text-->
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/animations.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/carousel.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" media="screen" href="slideshow/css/slideshowstyle.css"/>
-
-		<!-- Meta tags -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        
+<!-- Meta tags -->
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 		<meta name = "description" content = "Blue Restaurant & Bar, Best Mediterranean Restaurant in Charlotte, North Carolina, Award Winning Restaurant, Best Uptown Dining Restaurant, Wine Awards.">
 		<meta name = "keywords" content = "fine dining, Mediterranean, cuisine, Blue, Charlotte, North Carolina, elegant, stylish, Award Winning Restaurant, Best Wine List, Best Live Jazz">
@@ -22,7 +24,7 @@
 	</head>
 
 	<body>
-		<!-- Sidebar -->
+		<!-- Navbar -->
 		<ul class  = "animated fadeInUp" id = "navbar">
 			<li><a href="index.html">Home</a></li>
   			<li><a href = "about.html">About</a></li>
@@ -59,63 +61,53 @@
   			</li>
 		</ul>
 
+<!--End Navbar -->        
 <br>
-<br>
-        <div class="container">
-	<div id="content-slider">
-    	<div id="slider">
-        	<div id="mask">
-            <ul>
-           	<li id="first" class="firstanimation">
-            <a href="#">
-            <img src="slideshow/trueimg/img_1.jpg" alt="Pic 1"/>
-            </a>
-            <div class="tooltip">
-            <h1>Food item 1</h1>
-            </div>
-            </li>
-
-            <li id="second" class="secondanimation">
-            <a href="#">
-            <img src="slideshow/trueimg/img_2.jpg" alt="Pic 2"/>
-            </a>
-            <div class="tooltip">
-            <h1>Food 2</h1>
-            </div>
-            </li>
-            
-            <li id="third" class="thirdanimation">
-            <a href="#">
-            <img src="slideshow/trueimg/img_3.jpg" alt="Pic 3"/>
-            </a>
-            <div class="tooltip">
-            <h1>Food 3</h1>
-            </div>
-            </li>
-                        
-            <li id="fourth" class="fourthanimation">
-            <a href="#">
-            <img src="slideshow/trueimg/img_4.jpg" alt="Pic 4"/>
-            </a>
-            <div class="tooltip">
-            <h1>Food 4</h1>
-            </div>
-            </li>
-                        
-            <li id="fifth" class="fifthanimation">
-            <a href="#">
-            <img src="slideshow/trueimg/img_5.jpg" alt="Pic 5"/>
-            </a>
-            <div class="tooltip">
-            <h1>Food 5</h1>
-            </div>
-            </li>
-            </ul>
-            </div>
-            <div class="progress-bar"></div>
-        </div>
+<br> 
+<div id="slideshow" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active"><!-- class of active since it's the first item -->
+      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
     </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>s
+    <div class="item">
+      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <div class="carousel-caption">
+        <p>Caption text here</p>
+      </div>
+    </div>
+  </div><!-- /.carousel-inner -->
+  <!--  Next and Previous controls below
+        href values must reference the id for this carousel -->
+    <a class="carousel-control left" href="#slideshow" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#slideshow" data-slide="next">&rsaquo;</a>
 </div>
+        <!-- /.carousel -->
+        
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
         <p>Restaurant Hours of Operation:
 Monday - Thursday 5:00pm - 10:00pm
 Friday & Saturday 5:00pm - 11:00pm</p>
@@ -135,6 +127,13 @@ Friday & Saturday 5:00pm - 11:00pm</p>
 		<script type="text/javascript" src = "js/scrolling.js"></script> 
 		<script type="text/javascript" src = "js/sidebar.js"></script>
 		<script type="text/javascript" src = "js/stuff.js">new stuff.init();</script>
+<script>
+  $(document).ready(function(){
+    $('.carousel').carousel({
+      interval: 2500
+    });
+  });
+</script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
     </script>
 	</body>
