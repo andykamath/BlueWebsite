@@ -66,15 +66,12 @@ ul li ul li {
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
+  z-index: 1000;
+  position: absolute;
 }
 ul li ul li:hover { background: #666; }
 ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
-}
-
-#navbar
-{
-  z-index:1000;
 }
