@@ -62,21 +62,6 @@
   			</li>
 		</ul>
 <br>
-        <script>
-  $(function() {
-    $('#imageslider').bjqs({
-      width: 680,
-      height: 340,
-      animtype: 'fade',
-      responsive: false,
-      automatic: true,
-      keyboardnav: false,
-      markertype: '1',
-      prevtext: 'Prev',
-      nexttext: 'Next'
-    });
-  });
-  </script>
         <div id="imageslider">
     <ul class="bjqs">
       <li class="slide-1">
@@ -119,7 +104,21 @@ Friday & Saturday 5:00pm - 11:00pm</p>
 		<script type="text/javascript" src = "js/scrolling.js"></script> 
 		<script type="text/javascript" src = "js/sidebar.js"></script>
 		<script type="text/javascript" src = "js/stuff.js">new stuff.init();</script>
-        
+        <script>
+  $(function() {
+    $('#imageslider').bjqs({
+      width: 680,
+      height: 340,
+      animtype: 'fade',
+      responsive: false,
+      automatic: true,
+      keyboardnav: false,
+      markertype: '1',
+      prevtext: 'Prev',
+      nexttext: 'Next'
+    });
+  });
+  </script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
     </script>
 	</body>
