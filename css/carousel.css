@@ -7,6 +7,34 @@ body {
   color: #5a5a5a;
 }
 
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -14,7 +42,6 @@ body {
 .carousel {
   height: 500px;
   margin-bottom: 60px;
-    margin-top: 40px
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -102,12 +129,6 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
-}
-
-#carousel-example-generic
-{
-  height: 500px;
-  z-index: -1000;
 }
 
 @media (min-width: 992px) {
