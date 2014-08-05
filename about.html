@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <!-- Get a hold of yourself, it's just a title -->
-		<title>Blue Restarant &middot; Charlotte, NC | About Us</title>
-
+	<head>
+		<!-- Get a hold of yourself, it's just a title -->
+		<title>Blue Restarant &middot; Charlotte, NC</title>
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/animations.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/navbar.css">
+        <link rel="stylesheet" type="text/css" href="css/carousel.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-		<!-- Meta tags -->
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.js"></script>
+        
+<!-- Meta tags -->
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
 		<meta name = "description" content = "Blue Restaurant & Bar, Best Mediterranean Restaurant in Charlotte, North Carolina, Award Winning Restaurant, Best Uptown Dining Restaurant, Wine Awards.">
 		<meta name = "keywords" content = "fine dining, Mediterranean, cuisine, Blue, Charlotte, North Carolina, elegant, stylish, Award Winning Restaurant, Best Wine List, Best Live Jazz">
@@ -19,50 +24,65 @@
 	</head>
 
 	<body>
-		<!-- Sidebar -->
-		<ul class  = "animated fadeInUp" id = "navbar">
-			<li><a href="index.html">Home</a></li>
-  			<li><a href = "about.html">About</a></li>
-		  	<li>Menu <i class = "fa fa-sort-desc"></i>
-    		<ul>
-      			<li><a href = "dinner.html">Dinner</a></li>
-      			<li><a href = "dessert.html">Dessert</a></li>
-      			<li><a href = "wine.html">Wine</a></li>
-      			<li><a href = "late Night.html">Late Night</a></li>
-      			<li><a href = "bar.html">Bar Specials</a></li>
-      			<li><a href = "exec.html">Executive Takeout</a></li>
-      			<li><a href="prix.html">Prix-Fixe Pre Show</a></li>
-      			<li><a href="2014.html">2014 Restaurant Week</a></li>
-      			<li><a href="prom.html">Prom Menu 2014</a></li>
-    		</ul></li>
-  			<li>Reservations</li>
-  			<li>Events <i class = "fa fa-sort-desc"></i>
-  			<ul>
-  				<li><a href = "cal.html">Calendar</a></li>
-  				<li>Party2Help</li>
-  			</ul></li>
-  			<li>Private Events <i class = "fa fa-sort-desc"></i>
-  				<ul>
-	  				<li>Dinner Packages</li>
-  					<li>Cocktail Reception</li>
-	  				<li>Weddings</li>
-  				</ul>
-  			</li>
-  			<li>Contact Us <i class = "fa fa-sort-desc"></i>
-				<ul>
-					<li>Directions</li>
-					<li>Contact Information</li>
-				</ul>
-  			</li>
-		</ul>
+        <div class="main-content-stuff">
+		<!-- Navbar -->
+		<div class="navbar-wrapper animated fadeInUp">
+                <div class="container">
+                    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="#" style="color:#fff;font-family:'Pacifico';">Blue</a>
+                            </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#">Home</a></li>
+                                    <li><a href="about.html">About</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="dinner.html">Dinner</a></li>
+                                            <li><a href="dessert.html">Dessert</a></li>
+                                            <li><a href="wine.html">Wine</a></li>
+                                            <li><a href="late%20Night.html">Late Night</a></li>
+                                            <li><a href="bar.html">Bar Specials</a></li>
+                                            <li><a href="exec.html">Executive Takeout</a></li>
+                                            <li><a href="prix.html">Prix-Fixe Pre-Show</a></li>
+                                            <li><a href="2014.html">2014 Restaurant Week</a></li>
+                                            <li><a href="prom.html">Prom Menu 2014</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href = "reservations.css">Reservations</a></li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <span class="caret"></span></a>  
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="calendar.html">Calendar</a></li>
+                                            <li><a href="party.html">Party2Help</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Private events <span class="caret"></span></a>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="dinner.html">Dinner Packages</a></li>
+                                            <li><a href="cocktail.html">Cocktail Reception</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown">
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li><a href="directions.html">Directions</a></li>
+                                            <li><a href="contact.html">Contact Information</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<!-- Scripts -->
-		<script type="text/javascript" src = "js/bootstrap.js"></script>	
-		<script type="text/javascript" src = "js/jQuery.min.js"></script>
-		<script type="text/javascript" src = "js/script.js"></script>
-		<script type="text/javascript" src = "js/scrolling.js"></script>
-		<script type="text/javascript" src = "js/sidebar.js"></script>
-		<script type="text/javascript" src = "js/stuff.js">new stuff.init();</script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-	</body>
-</html>
+<!--End Navbar -->        
