@@ -6200,4 +6200,7 @@ button.close {
     display: none !important;
   }
 }
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
 /*# sourceMappingURL=bootstrap.css.map */
