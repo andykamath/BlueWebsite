@@ -3,7 +3,6 @@
 	<head>
 		<!-- Get a hold of yourself, it's just a title -->
 		<title>Blue Restarant &middot; Charlotte, NC</title>
-<!--arbitrary line of text-->
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="css/animations.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -12,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="css/carousel.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
         <script src="js/bootstrap.js"></script>
@@ -24,6 +24,8 @@
 	</head>
 
 	<body>
+        <h1><h1 style="font-family: 'Pacifico';font-size:52px;color: #fff;">Blue</h1></h1>
+        <div class="main-content-stuff">
 		<!-- Navbar -->
 		<ul class  = "animated fadeInUp" id = "navbar">
 			<li><a href="index.html">Home</a></li>
@@ -64,50 +66,51 @@
 <!--End Navbar -->        
 <br>
 <br> 
-<div id="slideshow" class="carousel slide">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
   <div class="carousel-inner">
-    <div class="item active"><!-- class of active since it's the first item -->
-      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+    <div class="item active">
+      <img src="..." alt="...">
       <div class="carousel-caption">
-        <p>Caption text here</p>
+        <h1>Haha James I fixed it</h1>
+          <h3>Am I a bully?</h3>
       </div>
     </div>
     <div class="item">
-      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <img src="..." alt="...">
       <div class="carousel-caption">
-        <p>Caption text here</p>
+        <h1>Lol we're a good team</h1>
+          <h3>but you're my slave</h3>
       </div>
     </div>
+    
     <div class="item">
-      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
+      <img src="..." alt="...">
       <div class="carousel-caption">
-        <p>Caption text here</p>
-      </div>
-    </div>s
-    <div class="item">
-      <img src="http://placehold.it/1200x480" alt="Please install a decent plugin..." />
-      <div class="carousel-caption">
-        <p>Caption text here</p>
+        <h1>If you have images, change them, otherwise lmk and I will add some</h1>
+          <h3>Another caption</h3>
       </div>
     </div>
-  </div><!-- /.carousel-inner -->
-  <!--  Next and Previous controls below
-        href values must reference the id for this carousel -->
-    <a class="carousel-control left" href="#slideshow" data-slide="prev">&lsaquo;</a>
-    <a class="carousel-control right" href="#slideshow" data-slide="next">&rsaquo;</a>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
 </div>
         <!-- /.carousel -->
         
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    
+    <div class = "container">
         <p>Restaurant Hours of Operation:
 Monday - Thursday 5:00pm - 10:00pm
 Friday & Saturday 5:00pm - 11:00pm</p>
@@ -116,8 +119,8 @@ Friday & Saturday 5:00pm - 11:00pm</p>
            <br>
                 <p>Charlotte’s Blue Restaurant is designed to tempt all of your senses, whether you desire Italian food, French food, Mediterranean food, Moroccan food, Spanish food, or American fine dining. Whatever your preference, Blue is Charlotte’s award-winning fine dining city center restaurant of choice in Charlotte, North Carolina.</p>
         </div>
- 
-        
+        </div>
+        </div>
     
         
 		<!-- Scripts -->
