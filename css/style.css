@@ -13,6 +13,7 @@ body
     background-repeat:no-repeat;
     background-size: 100% 100%;
     font-family: 'Open Sans';
+    color: black;
 }
 .main-content-stuff
 {
@@ -45,7 +46,14 @@ body
     padding-bottom: 20px;
     padding-left: 40px;
 }
-
+.col-md-8 li{
+    list-style-type: none;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.fineprint {
+ margin-top: 20px;   
+}
 
 
 /*Finally, we have carousel/navbar styles*/
