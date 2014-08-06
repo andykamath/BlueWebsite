@@ -6200,9 +6200,4 @@ button.close {
     display: none !important;
   }
 }
-@media (min-width:769px) {
-.dropdown:hover .dropdown-menu {
-    display: block;
- }
-}
 /*# sourceMappingURL=bootstrap.css.map */

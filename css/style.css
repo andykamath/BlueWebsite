@@ -28,6 +28,13 @@ body
 	display:block;
 	text-align:center;
 }
+/*Don't touch this*/
+@media (min-width:769px) {
+.dropdown:hover .dropdown-menu {
+    display: block;
+ }
+}
+/*End don't touch this*/
 
 /*Then comes menu styles*/
 
