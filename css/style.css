@@ -2,3 +2,13 @@
 {
     background-color: transparent;
 }
+#hours {
+width: 350px;
+    float: right;
+    margin: 100px 45px 0px 0px;
+    padding: 50px;
+    height: 300px;
+    z-index: 100000;
+  	/* RGBa with 0.75 opacity */
+  	background: rgba(0, 0, 0, 0.50);
+}
