@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/carousel.css">
         <link rel="icon" type="image/ico" href="img/blue.ico"></link>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
@@ -23,8 +24,6 @@
 	</head>
 
 	<body>
-        <div class="container">
-        <div class="main-content-stuff">
 		<!-- Navbar -->
 		<div class="navbar-wrapper animated fadeInUp">
                     <div class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -82,80 +81,73 @@
                         </div>
                     </div>
                 </div>
+
+           
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/bg1.jpg" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
-
-<!--End Navbar -->        
-<br>
-<br> 
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="https://raw.githubusercontent.com/hackgicianapps/BlueWebsite/gh-pages/img/homepage1.png" alt="If you can see this, something has gone terribly wrong. We suggest getting a decent browser, like Google Chrome. Whatever the cause, we apologize for the inconvenience.">
-      <div class="carousel-caption">
-        <h1>Placeholder 1</h1>
-      </div>
-    </div>
-    <div class="item">
-      <img src="https://raw.githubusercontent.com/hackgicianapps/BlueWebsite/gh-pages/img/homepage2.png" alt="If you can see this, something has gone terribly wrong. We suggest getting a decent browser, like Google Chrome. Whatever the cause, we apologize for the inconvenience.">
-      <div class="carousel-caption">
-        <h1>Placeholder 2</h1>
-      </div>
-    </div>
-    
-    <div class="item">
-      <img src="https://raw.githubusercontent.com/hackgicianapps/BlueWebsite/gh-pages/img/homepage3.png" alt="If you can see this, something has gone terribly wrong. We suggest getting a decent browser, like Google Chrome. Whatever the cause, we apologize for the inconvenience.">
-      <div class="carousel-caption">
-        <h1>Placeholder 3</h1>
-      </div>
-    </div>
-      
-      <div class="item">
-      <img src="https://raw.githubusercontent.com/hackgicianapps/BlueWebsite/gh-pages/img/homepage4.png" alt="If you can see this, something has gone terribly wrong. We suggest getting a decent browser, like Google Chrome. Whatever the cause, we apologize for the inconvenience.">
-      <div class="carousel-caption">
-        <h1>Placeholder 4</h1>
-      </div>
-    </div>
-      
-  </div>
-</div>
-        <!-- End carousel -->
-        
-    <div class = "jumbotron">
-        <span><h3>Restaurant Hours of Operation:</h3><p><br>
-Monday - Thursday 5:00pm - 10:00pm<br>
-Friday & Saturday 5:00pm - 11:00pm</p></span>
-	<hr>
-       <div class = "container">
-                <p>Blue Restaurant & Bar is a sophisticated Charlotte uptown restaurant that offers flavors from around the Mediterranean region. Award-winning Executive Chef Gene Briggs has created a multi-cultural menu that takes fine dining in Charlotte to new heights, and your taste buds on a whirlwind tour. Prepare to experience a Moroccan Tagine, hole Roasted Mediterranean Sea Bass, or Tenderloin a la Blue. As you travel around our award-winning Charlotte restaurant, the menu will delight you with familiar dishes and excite you by others you have yet to explore.</p>
-           <br>
-                <p>Charlotte’s Blue Restaurant is designed to tempt all of your senses, whether you desire Italian food, French food, Mediterranean food, Moroccan food, Spanish food, or American fine dining. Whatever your preference, Blue is Charlotte’s award-winning fine dining city center restaurant of choice in Charlotte, North Carolina.</p>
+          </div>
         </div>
+        <div class="item">
+          <img src="img/bg2.jpg" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
         </div>
+        <div class="item">
+          <img src="img/bg3.jpg" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
         </div>
+        <div class="item">
+          <img src="img/fish.jpg" alt="Fourth slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->    
         
-        
-		<!-- Scripts -->
-		<script type="text/javascript" src = "js/script.js"></script>
-		<script type="text/javascript" src = "js/scrolling.js"></script> 
-		<script type="text/javascript" src = "js/sidebar.js"></script>
-		<script type="text/javascript" src = "js/WOW.js">new WOW().init();</script>
-        <script>
-            $(document).ready(function(){
-                $('.carousel').carousel({
-                    interval: 4000
+        <!-- Scripts -->
+            <script type="text/javascript" src = "js/script.js"></script>
+            <script type="text/javascript" src = "js/scrolling.js"></script> 
+            <script type="text/javascript" src = "js/sidebar.js"></script>
+            <script type="text/javascript" src = "js/WOW.js">new WOW().init();</script>
+            <script>
+                $(document).ready(function(){
+                    $('.carousel').carousel({
+                        interval: 4000
+                    });
                 });
-            });
-        </script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
-    </script>
-	</body>
+            </script>
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js">
+            </script>
+    </body>
 </html>
