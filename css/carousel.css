@@ -237,3 +237,9 @@
 html,body{height:100%;}
 .carousel,.item,.active{height:100%;}
 .carousel-inner{height:100%;}
+
+@media (min-width:769px) {
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+    }
+}
