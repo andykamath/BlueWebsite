@@ -256,11 +256,16 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
 .carousel .next {left:0;opacity:1;z-index:1;}
 .navbar-wrapper
 {
-    width: 700px;
+    width: 600px;
     display: block;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+}
+
+.navbar
+{
+    width: 600px;
 }
 
 .fa
