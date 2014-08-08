@@ -4,7 +4,7 @@
 		<!-- Get a hold of yourself, it's just a title -->
 		<title>Blue Restarant &middot; Charlotte, NC</title>
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="css/animations.min.css">
+		<link rel="stylesheet" type="text/css" href="css/animate.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -23,11 +23,10 @@
 	</head>
 
 	<body>
-        <div class="main-content-stuff">
 		<!-- Navbar -->
-		<div class="navbar-wrapper animated fadeInUp">
+		<div class="navbar-wrapper animated fadeInUp" style="width: 700px;">
                 <div class="container">
-                    <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+                    <div class="navbar navbar-inverse navbar-static-top" style="width: 600px;" role="navigation">
                         <div class="container">
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -84,12 +83,24 @@
                 </div>
             </div>
 
-<!--End Navbar --> 
-                   
-<iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Blue%20Restaurant%20&key=AIzaSyAZwbQCDTf-AKn0dvdNahrgXOqkZQTydTQ"></iframe>            
-            
-            
-            
-</div>
+        <!--End Navbar --> 
+        <iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Blue%20Restaurant%20&key=AIzaSyAZwbQCDTf-AKn0dvdNahrgXOqkZQTydTQ"></iframe>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 wow fadeInUp">
+                    <h1>Where we are</h1>
+                    <h3>203 North College St<br>Charlotte, NC</h3>
+                    <p>Located in Uptown Charlotte, NC near the Bank of America Headquarters as well as near the Blumenthal Performing Arts center.<br>Complimentary Valet Parking beginning at 6pm. Self parking available in Hearst Parking Tower Parking Deck (Free after 5pm with validation from Blue)</p>
+                </div>
+                <div class="col-xs-6 wow fadeInUp" data-wow-delay="500ms">
+                    <h1>Get in Contact</h1>
+                    <h1><a href = "http://fb.com/BlueCharlotte"><i class="fa animated wow fadeInUp fa-facebook" data-wow-delay=""></i></a><a href="#"><i class="fa animated wow fadeInUp fa-twitter" data-wow-delay="333ms"></i></a><a href="#"><i class="fa animated wow fadeInUp fa-instagram" data-wow-delay="666ms"></i></a></h1>
+                    <p style="margin-top:20px;">Feel free to get in contact with us! We are here for you and you should give us feedback! Blue's aim is to give you the best food of our ability. Tell us about your experience at Blue!</p>
+                </div>
+            </div>
+        </div>
+        
+<script src="js/WOW.js"></script>
+<script>new WOW().init();</script>
 </body>
 </html>
