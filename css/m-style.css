@@ -53,6 +53,7 @@
     .carousel .container {
       position: relative;
       z-index: 9;
+      top: 10px;
     }
     }
 
