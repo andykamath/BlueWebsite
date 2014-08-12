@@ -47,19 +47,20 @@
 
     /* Carousel base class */
     .carousel {
-      margin-bottom: 0px;
+      margin-bottom: 100px;
     }
 
     .carousel .container {
       position: relative;
       z-index: 9;
-      top: 10px;
+      margin-bottom: 100px;
     }
     }
 
     .carousel-inner {
       overflow:hidden;
       position:relative;
+      margin-bottom: 100px;
     }
 
     .carousel img {
@@ -68,6 +69,7 @@
       left: 0;
       min-width: 100%;
       min-height: 100%;
+      margin-bottom: 100px;
     }
 
     .carousel-caption {
@@ -76,6 +78,7 @@
       max-width: 550px;
       padding: 0 20px;
       margin-top: 200px;
+      margin-bottom: 100px;
     }
     .carousel-caption h1,
     .carousel-caption .lead {
