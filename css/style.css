@@ -98,7 +98,7 @@
 
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .navbar-wrapper .container {
     padding-right: 15px;
@@ -167,4 +167,12 @@
     margin-left: 6.25%;
     width: 87.5%;
     bottom: 50px;
+}
+
+.swag
+{
+    margin-left:  13%;
+    margin-right: 5%;
+    display: block;
+    text-align: center;
 }
