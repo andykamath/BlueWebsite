@@ -97,9 +97,6 @@
 @media (min-width: 768px) {
 
   /* Navbar positioning foo */
-  .navbar-wrapper {
-    margin-top: 60px;
-  }
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -175,3 +172,12 @@
 .centered-pills a { float:left; }
 * html .centered-pills ul.nav-pills { display:inline; } /* IE6 */
 *+html .centered-pills ul.nav-pills { display:inline; } /* IE7 */
+
+#navbar-wrapper
+{
+    margin-top: 20px;
+}
+
+#navbar-wrapper-menu
+{
+    margin-top:60px;
