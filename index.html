@@ -24,7 +24,7 @@ $(function(){
         <div class="item active">
             <img src="img/bg1.jpg" alt="First slide">
             <div class="container">
-                <div class="carousel-caption">
+                <div class="carousel-caption" style="display:block;text-align:center;">
                     <script>var desc = "Blue wants to give you the finest Mediterranean food and wine. With live jazz and a nice environment, we know you'll have a good time here"</script>
                     <h1>Menu Item Here</h1>
                     <p><script>document.write(desc);</script></p>
@@ -63,6 +63,38 @@ $(function(){
              </div>
              </div>
     </div>
+</div>
+
+<div id="important" class="animated wow fadeInUp" style="color:black">
+        <div class="row">
+            <div class="col-md-9">
+                <h1>Hours</h1>
+                <span><h3>The bar today is open from <script>
+                    var thisday = new Date();
+                    var today=thisday.getDay();
+                    switch(today)
+                    {
+                        case 1:
+                        case 2:  
+                            document.write("4:00pm-10:00pm");
+                            break;
+                        case 3:
+                        case 4:
+                            document.write("4:00pm-12:00am");
+                            break;
+                        case 5:
+                        case 6:
+                            document.write("4:00pm-2:00am");
+                            break;
+                        case default:
+                            document.write("Sorry, the restaurant is closed today");
+                    }
+                </script> today</h3></span>
+                
+                <span><h3>The restaurant is open from <script>if(today<=4 && today >=1){document.write("5:00pm - 10:00pm");}else if(today>4){document.write("5:00pm - 11:00pm");}else{document.write("Sorry, the restaurant is closed today");}</script> today</h3></span>
+            </div>
+            <div class="col-md-3"><img src="img/clock.jpg" width="100%" id="infoimg"></div>
+        </div>
 </div>
 <div id="footer"></div>
 </body>
