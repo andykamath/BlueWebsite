@@ -9,15 +9,76 @@
     });
     </script> 
 </head>
-<body style="background:url(img/blue.jpg);background-size: 100% 100%;height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-color:#DDE3E3">
+<body style="background:url(img/blue.jpg);background-size: 100% 100%;height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-color:#DDE3E3; color:black">
     <div id="header"></div>
     
     <div class="jumbotron animated wow fadeInDown" data-wow-delay="1s" style="height: 100%; width: 100%;background:rgba(500,500,500,0.5)">
         <div class="container" style="color: gray;width:100%;">
             <h1>Dinner</h1>
-                <div class="swag" style="display:inline;width:100%"><h3 class="animated wow fadeInUp" data-wow-delay="1250ms">Appetizers</h3><h3 class="animated wow fadeInUp" data-wow-delay="1500ms">Cheese Selections</h3><h3 class="animated wow fadeInUp" data-wow-delay="1750ms">Traditional Entrees</h3><h3 class="animated wow fadeInUp" data-wow-delay="2000ms">Seasonal Specials</h3></div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1250ms" id="ashow"><a>Appetizers</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="cshow"><a>Cheese Selections</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1750ms" id="tshow"><a>Traditional Entrees</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="2000ms" id="sshow"><a>Seasonal Specials</a></h3>
+                </div>
+                
+                <div class="col-md-9" id="a">
+                    <div class="container animated fadeInLeft" style="color:black;">
+                        <h1>Appetizers</h1>
+                    </div>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="container animated fadeInLeft" id="c" style="color:black;">
+                        <h1>Cheese Selections</h1>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="container animated fadeInLeft" id="t" style="color:black;">
+                        <h1>Traditional Entrees</h1>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="container animated fadeInLeft" id="s" style="color:black;">
+                        <h1>Seasonal Specials</h1>
+                    </div>
+                </div>
+            </div>
          </div>
     </div>
+    
+    <script>
+        $("#ashow").click(function(){
+            $("#a").show();
+            $("#c").hide();
+            $("#t").hide();
+            $("#s").hide(); 
+        });
+        $("#cshow").click(function(){
+            $("#c").show();
+            $("#a").hide();
+            $("#t").hide();
+            $("#s").hide(); 
+        });
+        $("#tshow").click(function(){
+            $("#t").show();
+            $("#a").hide();
+            $("#c").hide();
+            $("#s").hide(); 
+        });
+        $("#sshow").click(function(){
+            $("#s").show();
+            $("#a").hide();
+            $("#c").hide();
+            $("#t").hide(); 
+        });
+        $(document).ready(function(){
+            $("#c").hide();
+            $("#t").hide();
+            $("#s").hide();
+        });
+    </script>
     
     <div id="footer"></div>
     <script src="js/WOW.js"></script>

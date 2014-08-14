@@ -137,4 +137,13 @@
     color: #fff;
 }
 
+.col-xs-9
+{
+    position: fixed;
+    background-color: #fff;
+}
 
+.col-xs-3 a
+{
+    color: black;
+}
