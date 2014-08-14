@@ -3,15 +3,72 @@
 <title></title>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script> 
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script> 
+    $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+    });
+    </script> 
 </head>
-<body>
-<div id="header"></div>
-<!--Remaining section-->
-<div id="footer"></div>
+<body style="background:url(img/blue.jpg);background-size: 100% 100%;height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-color:#DDE3E3; color:black">
+    <div id="header"></div>
+    
+    <div class="jumbotron animated wow fadeInDown" data-wow-delay="1s" style="height: 100%; width: 100%;background:rgba(500,500,500,0.5)">
+        <div class="container" style="width:100%;color:black">
+            <h1>Desserts</h1>
+            <h3>Cake di Chocolate</h3>
+            <h6>with a warm molten center and vanilla bean ice cream</h6>
+            <h3>Lemmon Chess Pie</h3>
+            <h6>with a ginger-blueberry coulis</h6>
+            <h3>Sticky Toffee Pudding</h3>
+            <h6>with salted butter caramel sauce dulce de leche gelato and cocoa nibs</h6>
+            <h3>White Chocolate Crème Brulee</h3>
+            <h6>with a caramelized sugar crust and mixed berries</h6>
+            <h3>Pistachio and Roasted Pear Baklava</h3>
+            <h6>with cardamom and saffron mascarpone</h6>
+            <h3>Raspberry Semifreddo</h3>
+            <h6>with a Colombian dark chocolate brownie and raspberry coulis</h6>
+            <h3>Francisco’s Tres Leches Cake</h3>
+            <h6>with a caramelized pineapple sauce and ginger gelato</h6>
+            
+         </div>
+    </div>
+    
+    <script>
+        $("#ashow").click(function(){
+            $("#a").show();
+            $("#c").hide();
+            $("#t").hide();
+            $("#s").hide(); 
+        });
+        $("#cshow").click(function(){
+            $("#c").show();
+            $("#a").hide();
+            $("#t").hide();
+            $("#s").hide(); 
+        });
+        $("#tshow").click(function(){
+            $("#t").show();
+            $("#a").hide();
+            $("#c").hide();
+            $("#s").hide(); 
+        });
+        $("#sshow").click(function(){
+            $("#s").show();
+            $("#a").hide();
+            $("#c").hide();
+            $("#t").hide(); 
+        });
+        
+        $(document).ready(function(){
+            $("#a").show();
+            $("#c").hide();
+            $("#t").hide();
+            $("#s").hide();
+        });
+    </script>
+    
+    <div id="footer"></div>
+    <script src="js/WOW.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>
