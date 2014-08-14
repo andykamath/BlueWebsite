@@ -26,10 +26,13 @@
       min-height: 100%;
     }
 #menutext {
- align-content: left;
+    align-self: left;
     font-family: 'Muli';
-    font: 'Normal 300';
-    
+}
+#menutext p {
+ align-self: left;
+    font-family: 'Muli';
+    font: 'Normal 300';   
 }
 
 
