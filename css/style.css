@@ -20,7 +20,7 @@
     /* Padding below the footer and lighter body text */
 
     body {
-      font-family: 'Open Sans';
+      font-family: 'Muli';
       height: 100%;
       width: 100%;
       min-height: 100%;
@@ -155,13 +155,6 @@
 .fa-instagram:hover
 {
     color: brown
-}
-
-#important
-{
-    margin-left: 6.25%;
-    width: 87.5%;
-    bottom: 50px;
 }
 
 .centered-pills { text-align:center; }
@@ -350,4 +343,22 @@ i.service-icon {
 
 .round {
     border-radius:50%;
+}
+
+#important
+{
+    background-image: url(../img/restaurant.jpg);
+    background-size: 100%;
+    color: black;
+    background-attachment: fixed;
+    height: 500px;
+    -webkit-filter: none;
+    
+}
+
+.container
+{
+    display: block;
+    text-align: center;
+    color: #fff;
 }
