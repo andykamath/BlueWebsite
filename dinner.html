@@ -22,6 +22,7 @@
                     <h3 class="animated wow fadeInUp" data-wow-delay="1750ms" id="cshow"><a>Cheese Selections</a></h3>
                     <h3 class="animated wow fadeInUp" data-wow-delay="2000ms" id="tshow"><a>Traditional Entrees</a></h3>
                     <h3 class="animated wow fadeInUp" data-wow-delay="2250ms" id="sshow"><a>Seasonal Specials</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="2500ms" id="sishow"><a>Sides</a></h3>
                 </div>
                 
                 <div class="col-md-9" id="a">
@@ -39,11 +40,10 @@
                 
                 <div class="col-md-9">
                     <div class="container" id="c" style="color:black;">
-                        <h1 class="animated fadeInLeft">Cheese Selections</h1>
+                        <h1 class="animated fadeInLeft">Cheese Selections</h1>  
                         <div id="menutext">
 <h2>Gorgonzola Dolce: Italy</h2><p>Mild, young, blue creamy cheese.</p><h2>Bellavitano: Wisconsin</h2><p>A creamy rich cow’s milk cheese. Cheddar-Parmesan like with fruity notes.</p><h2>Hooks 7-Year Cheddar:  Wisconsin</h2><p>A yellow cheddar cheese; extra sharp.</p><h2>Humboldt Fog: California</h2><p>A creamy and tangy goat’s milk cheese separated by a layer of edible ash.</p><h2>Mt. Tam: North Carolina</h2><p>Cowgirl Creamery’s signature cheese is a smooth, creamy, elegant, triple-cream firm, yet buttery with a mellow, earthy flavor reminiscent of white mushrooms.</p><h2>Quadrello Di Bufala: Italy</h2><p>Distinctly buffalo; creamy, sweet and robustly pungent.</p>
                     </div>
-
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -59,27 +59,41 @@
                 <div class="col-md-9">
                     <div class="container" id="t" style="color:black;">
                         <h1 class="animated fadeInLeft">Traditional Entrees</h1>
-                        <div class="animated wow fadeInUp" data-wow-delay="500ms">
-                            
-                            <h3></h3>
+                        <div id="menutext">
+<h2>Chicken Tagine: Morocco (GF without cous cous)</h2><p>Ashley Farms chicken, roasted with ras el hanout and a blend of apricots, dates, carrots, chickpeas, saffron potatoes and squash served with cous cous, toasted almonds and a fiery harrisa sauce.    24.95</p><h2>Duo of Wild Boar:  Italy (GF)</h2><p>Grilled tenderloin and crepinette of shoulder braised with porcini mushrooms over chestnut risotto, served with rainbow Swiss chard and black currant marmalade.  34.95</p><h2>Whole Roasted Mediterranean Sea Bass:  Greece (GF)</h2><p>Whole roasted Bronzini with fresh herbs, artichokes, pear tomatoes and a lemon spinach orzo pasta.   29.95</p><h2>Beef Tenderloin ala Blue:  Charlotte, NC (GF without gorgonzola)</h2><p>Pan seared filet topped with creamy gorgonzola dolce, served with sweet onion marmalade and a pancetta and green pea risotto.  32.95</p><h2>Mushroom Bolognese:  Italy</h2><p>Mixed chopped forest mushrooms slow cooked with diced vegetables and tomatoes over pacherri pasta.   19.95</p>   
                     </div>
                     </div>
-                </div>
+                    </div>
                 <div class="col-md-9">
                     <div class="container" id="s" style="color:black;">
                         <h1 class="animated fadeInLeft">Seasonal Specials</h1>
-                        <p class="animated wow fadeInUp" data-wow-delay="500ms">James, I'm serious</p>
+                        <div id="menutext">
+<h2>Pan Seared Alaskan Halibut (GF)</h2><p>Over a carrot ginger puree with sugar snap peas and a lump crab and micro celery salad.   32.95<br>Suggested Wine Pairing: 2012 Castell De Raimat Spanish Albariño</p><h2>Grilled C.A.B. Flat Iron Steak* (GF)</h2><p>With roasted forest mushrooms, creamy tomato-parmesan polenta and roasted broccoli rabe.   24.95<br>Suggested Wine Pairing: 2011 Newton Claret, Napa County Red Meritage</p><h2>Grilled Scottish Salmon*</h2><p>Over a summer squash gratinee with basil pesto and marinated heirloom cherry tomatoes.     23.95<br>Suggested Wine Pairing: 2012 Belle Glos Meiomi, Tri-County California</p><h2>Housemade Orecchiette Pasta</h2><p>With sweet duck sausage and rapini.    18.95<br>Suggested Wine Pairing: 2012 St. Hilaire Côtes du Rhône</p><h2>Seared Jumbo Scallops* (GF)</h2><p>Over a summer succotash of fava beans, asparagus, cherry tomatoes, onion and a corn cream topped with pistachio pesto.   26.95<br>Suggested Wine Pairing: 2012 Rodney Strong Chardonnay, Sonoma County</p><h2>Lamb Rack and Crisp Lamb Belly* (GF)</h2><p>With a potato-leek puree, grilled asparagus and salsa verde.   31.95<br>Suggested Wine Pairing:  2012 Cigar Box, Reserve Mendoza Argentinian Malbec</p><h2>Roasted Heritage Pork Tenderloin* (GF)</h2><p>On a new potato, bacon and corn ragout.   23.95<br>Suggested Wine Pairing:  2011 Seven Deadly Zins, Lodi Old Vine Zinfandel</p>               
+                            </div>
                     </div>
                 </div>
+        <div class="col-md-9">
+                    <div class="container" id="si" style="color:black;">
+                        <h1 class="animated fadeInLeft">Sides</h1>
+                        <div id="menutext">
+<h2>Crushed Potatoes with Olive Oil and Sea Salt    5.95</h2>
+<h2>Sweet Pea and Pancetta Risotto  6.95</h2>
+<h2>Haricot Vert    5.95</h2>
+<h2>Chestnut Risotto    5.95</h2>
+<h2>Spinach Orzo    5.95</h2>
+                            </div>
+                    </div>
+                </div>
+                </div>
             </div>
-         </div>
-    </div>
+            </div>
     
     <script>
         $("#ashow").click(function(){
             $("#a").show();
             $("#m").hide();
             $("#c").hide();
+            $("#si").hide();
             $("#t").hide();
             $("#s").hide(); 
         });
@@ -88,12 +102,14 @@
             $("#t").hide();
             $("#a").hide();
             $("#c").hide();
+            $("#si").hide();
             $("#s").hide(); 
         });
         $("#cshow").click(function(){
             $("#c").show();
             $("#m").hide();
             $("#a").hide();
+            $("#si").hide();
             $("#t").hide();
             $("#s").hide(); 
         });
@@ -101,11 +117,21 @@
             $("#t").show();
             $("#m").hide();
             $("#a").hide();
+            $("#si").hide();
             $("#c").hide();
             $("#s").hide(); 
         });
         $("#sshow").click(function(){
             $("#s").show();
+            $("#si").hide();
+            $("#m").hide();
+            $("#a").hide();
+            $("#c").hide();
+            $("#t").hide(); 
+        });
+        $("#sishow").click(function(){
+            $("#si").show();
+            $("#s").hide();
             $("#m").hide();
             $("#a").hide();
             $("#c").hide();
@@ -114,6 +140,7 @@
         
         $(document).ready(function(){
             $("#a").show();
+            $("#si").hide();
             $("#m").hide();
             $("#c").hide();
             $("#t").hide();
