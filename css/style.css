@@ -19,13 +19,18 @@
     -------------------------------------------------- */
     /* Padding below the footer and lighter body text */
 
-    body {
+.body {
       font-family: 'Muli';
       height: 100%;
       width: 100%;
       min-height: 100%;
     }
-
+#menutext {
+ align-content: left;
+    font-family: 'Muli';
+    font: 'Normal 300';
+    
+}
 
 
 
