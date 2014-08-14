@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 	<head>
         <!-- PUBLISHING TO MASTER -->
@@ -11,9 +10,11 @@
 <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
         <script src="js/bootstrap.js"></script>
         <script type="text/javascript">
+    <!--
     if (screen.width <= 800) {
-    window.location = "m-header.html";
+    window.location = "m-index.html";
     }
+    //-->
     </script>
         
 <!-- Meta tags -->
@@ -81,16 +82,82 @@
                         </div>
                     </div>
                 </div>
-                <div class="swag centered-pills" style="">
-    <ul class="nav nav-pills">
-        <li class="animated fadeInUp"><a href = "dinner.html">Dinner</a></li>
-        <li class="animated wow fadeInUp" data-wow-delay="125ms"><a href="dessert.html">Dessert</a></li>
-        <li class="animated wow fadeInUp" data-wow-delay="250ms"><a href="wine.html">Wine</a></li>
-        <li class="animated wow fadeInUp" data-wow-delay="375ms"><a href="late%20Night.html">Late Night</a></li>
-        <li class="animated wow fadeInUp" data-wow-delay="500ms"><a href="bar.html">Bar Specials</a></li>
-        <li class="animated wow fadeInUp" data-wow-delay="625ms"><a href="exec.html">Executive Takeout</a></li>
-        <li class="animated wow fadeInUp" data-wow-delay="750ms"><a href="prix.html">Prix-Fixe Pre-Show</a></li>
-        <li class="animated wow fadeInUp" data-wow-delay="875ms"><a href="2014.html">2014 Restaurant Week</a></li>
-        <li class="animated wow fadeInUp" data-wow-delay="1s"><a href="prom.html">Prom Menu 2014</a></li>
-    </ul>
+                 <a id="menu-toggle" href="#" class="btn btn-danger btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <li class="center" style="margin-top:50px;"><img src="img/Logo.png" width="150" class="round" alt="Profile Picture"></li>
+        <li class="center"><h2 style="color:white;">Andy Kamath</h2></li>
+        <ul class="nav nav-pills nav-stacked">
+            <li><a class = "navitem" href = "#top"><i class = "fa fa-home" style = "margin-right: 10px;"></i>Home</a></li>
+            <li><a class = "navitem" href="#aboutme"><i class = "fa fa-users" style = "margin-right: 10px;"></i>About Me</a></li>  
+            <li><a class = "navitem" href="#accolades"><i class = "fa fa-graduation-cap" style = "margin-right: 10px;"></i>Accolades</a></li>
+            <li><a class="navitem" href="#contact"><i class = "fa fa-send" style = "margin-right: 10px;"></i>Contact Us</a></li>
+        </ul>
+      </ul>
     </div>
+<script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    
+    <script>
+        $("#phone").mouseover(
+            function(e){
+                $('#phone').css('background-image','none');
+                $( "#github" ).show();
+            });
+        $("#phone").mouseout(
+            function(e){
+                $('#phone').css('background-image', 'url(img/phone.png)');
+                $("#github").hide();
+            });
+        $(".fa-facebook").mouseover(
+            function(e){
+            $('.fa-facebook').css('color', 'blue');
+            });
+        $(".fa-instagram").mouseover(
+            function(e){
+            $('.fa-instagram').css('color', 'brown');
+            });
+        $(".fa-twitter").mouseover(
+            function(e){
+            $('.fa-twitter').css('color', 'skyblue');
+            });
+        $(".fa-linkedin").mouseover(
+            function(e){
+            $('.fa-linkedin').css('color', '#fff');
+            });
+        $(".fa-facebook").mouseout(
+            function(e){
+            $('.fa-facebook').css('color', 'gray');
+            });
+        $(".fa-instagram").mouseout(
+            function(e){
+            $('.fa-instagram').css('color', 'gray');
+            });
+        $(".fa-twitter").mouseout(
+            function(e){
+            $('.fa-twitter').css('color', 'gray');
+            });
+        $(".fa-linkedin").mouseout(
+            function(e){
+            $('.fa-linkedin').css('color', 'gray');
+            });
+    </script>  
+      
+    <script>
+        $(".navitem").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+    </script>
+    
+    <script src="js/WOW.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>

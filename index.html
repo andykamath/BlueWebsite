@@ -11,14 +11,15 @@ $(function(){
 </head>
 <body>
 <div id="header"></div>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-                
+<div id="myCarousel" class="carousel slide" data-ride="carousel">           
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <br>
+        <h1><a href="#important" style="color:#fff;">Scroll down <i class="fa fa-arrow-circle-down" style="color:#fff;"></i></a></h1>
     </ol>
     <div class="carousel-inner">
         <div class="item active">
@@ -61,42 +62,15 @@ $(function(){
                     <p><a class="btn btn-lg btn-primary" href="http://www.opentable.com/blue-restaurant-charlotte-nc-reservations-charlotte?rtype=ism&restref=4983" role="button">Reserve a Table</a></p>
                  </div>
              </div>
-             </div>
+        </div>
     </div>
+    <h1>swag</h1>
 </div>
 
 <div id="important" class="animated wow fadeInUp" style="color:black">
-        <div class="row">
-            <div class="col-md-9">
                 <h1>Hours</h1>
-                <span><h3>The bar today is open from <script>
-                    var thisday = new Date();
-                    var today=thisday.getDay();
-                    switch(today)
-                    {
-                        case 1:
-                        case 2:  
-                            document.write("4:00pm-10:00pm");
-                            break;
-                        case 3:
-                            document.write("4:00pm-12:00am");
-                            break;
-                        case 4:
-                            document.write("4:00pm-12:00am");
-                            break;
-                        case 5:
-                        case 6:
-                            document.write("4:00pm-2:00am");
-                            break;
-                        case default:
-                            document.write("Sorry, the restaurant is closed today");
-                    }
-                </script> today</h3></span>
-                
-                <span><h3>The restaurant is open from <script>if(today<=4 && today >=1){document.write("5:00pm - 10:00pm");}else if(today>4){document.write("5:00pm - 11:00pm");}else{document.write("Sorry, the restaurant is closed today");}</script> today</h3></span>
-            </div>
-            <div class="col-md-3"><img src="img/clock.jpg" width="100%" id="infoimg"></div>
-        </div>
+                <span><h3>The bar today is open from <script>var today = new Date();today = today.getDay();switch(today){case 1:document.write("4:00pm-10:00pm");break;case 2:document.write("4:00pm-10:00pm");break;case 3:document.write("4:00pm-12:00am, Late Night Menu served until 11:00pm");break;case 4:document.write("4:00pm-12:00am, Late Night Menu served until 11:00pm");break;case 5:document.write("4:00pm-2:00am");break;case 6:document.write("4:00pm-2:00am");break;case 0:document.write("closed")}</script></h3></span>
+                <span><h3>The restaurant is open from <script>var today = new Date();today = today.getDay();if(today<=4 && today >=1){document.write("5:00pm - 10:00pm");}else if(today>4){document.write("5:00pm - 11:00pm");}else{document.write("closed");}</script></h3></span>
 </div>
 <div id="footer"></div>
 </body>
