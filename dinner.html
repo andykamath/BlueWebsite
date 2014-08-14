@@ -18,15 +18,49 @@
             <div class="row">
                 <div class="col-xs-3">
                     <h3 class="animated wow fadeInUp" data-wow-delay="1250ms" id="ashow"><a>Appetizers</a></h3>
-                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="cshow"><a>Cheese Selections</a></h3>
-                    <h3 class="animated wow fadeInUp" data-wow-delay="1750ms" id="tshow"><a>Traditional Entrees</a></h3>
-                    <h3 class="animated wow fadeInUp" data-wow-delay="2000ms" id="sshow"><a>Seasonal Specials</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="mshow"><a>Mid Courses and Salads</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1750ms" id="cshow"><a>Cheese Selections</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="2000ms" id="tshow"><a>Traditional Entrees</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="2250ms" id="sshow"><a>Seasonal Specials</a></h3>
                 </div>
                 
                 <div class="col-md-9" id="a">
                     <div class="container" style="color:black;">
                         <h1 class="animated fadeInLeft">Appetizers</h1>
-                        <p class="animated wow fadeInUp" data-wow-delay="500ms">Lorem Ipsum, change this text James</p>
+                        <div class="animated wow fadeInUp" style="color:black" data-wow-delay="500ms">
+                            
+                            <h4>Pan Seared Hudson Valley Foie Gras: France*</h4>
+
+Over butter toasted brioche with a rhubarb marmalade and toasted pistachio. $15.95
+
+Galette de Crabe et Homard: France
+
+Provence style lobster and crab cakes finished with basil oil and a citrus beurre blanc.  $12.95
+
+Arrancini: Italy
+
+Risotto balls stuffed with pancetta, sweet onions and mozzarella fried crispy and served
+
+with a rich tomato sauce.  $8.95
+
+P.E.I. Mussels ala Basquaise: Spain
+
+Plump mussels pan roasted with Spanish chorizo, onions, peppers and tomatoes served with grilled focaccia. $10.95 (GF No focaccia)
+
+Arabic Lamb Flatbread
+
+Seasoned ground lamb with pine nuts, herbs and tomato on flat bread with a tahini yogurt sauce. $9.95
+
+Crispy Calamari with Fried Olives and Peppadew Peppers: North Africa
+
+Chickpea flour crusted with a lemon-harissa dipping sauce.  $11.50 
+
+Jumbo Diver Scallops: Italy
+
+*Award Winning Best Appetizer— Taste of the Nation
+
+Wrapped in prosciutto, sautéed crisp and served over a fava bean puree. Topped with lemon marmalade.  $12.95 (GF)
+                    </div>
                     </div>
                 </div>
                 
@@ -37,9 +71,18 @@
                     </div>
                 </div>
                 <div class="col-md-9">
+                    <div class="container" id="m" style="color:black;">
+                        <h1 class="animated fadeInLeft">Mid Courses and Salads</h1>
+                        <p class="animated wow fadeInUp" data-wow-delay="500ms">James. Fix it now</p>
+                    </div>
+                </div>
+                <div class="col-md-9">
                     <div class="container" id="t" style="color:black;">
                         <h1 class="animated fadeInLeft">Traditional Entrees</h1>
-                        <p class="animated wow fadeInUp" data-wow-delay="500ms">Stop worrying about whether all the links work</p>
+                        <div class="animated wow fadeInUp" data-wow-delay="500ms">
+                            
+                            <h3></h3>
+                    </div>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -55,24 +98,35 @@
     <script>
         $("#ashow").click(function(){
             $("#a").show();
+            $("#m").hide();
             $("#c").hide();
             $("#t").hide();
             $("#s").hide(); 
         });
+        $("#mshow").click(function(){
+            $("#m").show();
+            $("#t").hide();
+            $("#a").hide();
+            $("#c").hide();
+            $("#s").hide(); 
+        });
         $("#cshow").click(function(){
             $("#c").show();
+            $("#m").hide();
             $("#a").hide();
             $("#t").hide();
             $("#s").hide(); 
         });
         $("#tshow").click(function(){
             $("#t").show();
+            $("#m").hide();
             $("#a").hide();
             $("#c").hide();
             $("#s").hide(); 
         });
         $("#sshow").click(function(){
             $("#s").show();
+            $("#m").hide();
             $("#a").hide();
             $("#c").hide();
             $("#t").hide(); 
@@ -80,6 +134,7 @@
         
         $(document).ready(function(){
             $("#a").show();
+            $("#m").hide();
             $("#c").hide();
             $("#t").hide();
             $("#s").hide();
