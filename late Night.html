@@ -3,15 +3,62 @@
 <title></title>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script> 
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script> 
+    $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+    });
+    </script> 
 </head>
-<body>
-<div id="header"></div>
-<!--Remaining section-->
-<div id="footer"></div>
+<body style="background:url(img/blue.jpg);background-size: 100% 100%;height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-color:#DDE3E3; color:black; background-attachment: fixed">
+    <div id="header"></div>
+    
+    <div class="jumbotron animated wow fadeInUp" data-wow-delay="1s" style="width:100%;background:rgba(500,500,500,0.5)">
+        <div class="container" style="color: gray;width:100%;">
+            <h1>Prom Menu 2014</h1>
+              <h3>In the Bar Only</h3><h4>Until 11 pm (Wednesday – Thursday), and until 12 am (Friday – Saturday)</h4>
+            <div class="row">
+                <div class="col-xs-3">
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1250ms" id="appshowl8"><a>Appetizers</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="desshowl8"><a>Desserts</a></h3>
+
+                </div>
+                <div class="col-md-9" id="appl8">
+                    <div class="container" style="color:black;">
+                        <h1 class="animated fadeInLeft">Appetizers</h1>
+                        <div id="menutext">
+                            <h2>Arabic Lamb Flatbread</h2><p>Seasoned ground lamb with pine nuts, herbs and tomato on flat bread with tahini yogurt sauce.  9.95</p><h2>Crispy Calamari with Fried Olives and Peppadew Peppers</h2><p>Chikpea flour crusted with lemon-harissa dipping sauce.   11.50</p><h2>Crispy Arrancini</h2><p>Risotto balls stuffed with panchetta, sweet onions and mozzarella fried crispy and served with a rich tomato sauce.    8.95</p><h2>Pizza Pomodoro</h2><p>With fresh mozzarella, tomato, basil and Parmigiano.  7.95</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="container" id="del8" style="color:black;">
+                        <h1 class="animated fadeInLeft">Desserts</h1>  
+                        <div id="menutext">
+                            <h2>White Chocolate Creme Brulee</h2><p>With a caramelized sugar crust and mixed berries.   7.95</p><h2>Lemon Chess Pie</h2><p>With a ginger-blueberry coulis.  7.95</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script>
+        $("#appshowl8").click(function(){
+            $("#appl8").show();
+            $("#del8").hide();
+        });
+        $("#desshowl8").click(function(){
+            $("#del8").show();
+            $("#appl8").hide();
+        });
+        $(document).ready(function(){
+            $("#appshowl8").show();
+            $("#appl8").hide();
+        });
+    </script>
+    <div id="footer"></div>
+    <script src="js/WOW.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>
