@@ -3,37 +3,81 @@
 <title></title>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script> 
-$(function(){
-  $("#header").load("header.html"); 
-  $("#footer").load("footer.html"); 
-});
-</script> 
+    $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+    });
+    </script> 
 </head>
-<body>
-<div id="header"></div>
-
-<!--End Navbar -->     
-    <div class="main-content-stuff" id="main-content-stuff-2014">
-    <div class="swag">        
-    <div class = "container">
-        <div class="animated fadeInUp">
-        <div class="row">
-            <div class="col-md-4">   
-            <img src="img/Queens%20Feast%20Logo.png" width="65%" height="65%" alt="Queens Feast Restaurant Week"> 
+<body style="background:url(img/blue.jpg);background-size: 100% 100%;height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-color:#DDE3E3; color:black;background-attachment:fixed;font-family:'Muli'">
+    <div id="header"></div>
+    
+    <div class="jumbotron animated wow fadeInUp" data-wow-delay="1s" style="width: 100%;height: 105%;background:rgba(500,500,500,0.5)">
+        <div class="container" style="color: gray;width:100%;">
+            <h1>2014 Restaurant Week</h1>
+            <h2>3 Courses for 30 per person*<br>July 18-26 2014</h2>
+            <h3>*Excludes Gratuity & Sales Tax</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1250ms" id="2k14saladshow"><a>Choice of Salad or Appetizer</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="2k14entrshow"><a>Choice of Entrée</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1750ms" id="2k14desshow"><a>Choice of Dessert</a></h3>
                 </div>
-            <div class="col-md-8">
-            <h2>2014 Restaurant Week Menu</h2>
-            <h3><span>3 Courses for $30 Per Person<br>July 18th - 26th 2014</span></h3> <br> <h4>Choice of Salad or Appetizer</h4><ul><li>Arabic Lamb Flatbread</li><li>Traditional Hummus with Dolmades</li><li>Tega Hill's Mixed Greens Salad</li><li>Heirloom Tomato Fattoush Salad</li></ul><h4>Choice of Entrées</h4><ul><li>Mushroom Bolognese</li><li>Grilled C.A.B. Flat Iron Steak</li><li>Grilled Scottish Salmon</li><li>Roasted Heritage Pork Tenderloin</li></ul><h4>Choice of Dessert</h4><ul><li>Cake di Chocolate</li><li>Lemon Chess Pie</li><li>Sticky Toffee Pudding</li><li>White Chocolate Crème Brulee</li><li>Pistachio and Roasted Pear Baklava</li><li>Raspberry Semifreddo</li><li>Francisco's Tres Leches Cake</li></ul>
-<h5 class="fineprint"><span>*Excludes Gratuity & Sales Tax</span></h5><br>
+                
+                <div class="col-md-9" id="2k14salad">
+                    <div class="container" style="color:black;">
+                        <h1 class="animated fadeInLeft">Choice of Salad or Appetizer:</h1>
+                        <div id="menutext" class="animated fadeInUp">        
+                            <h2>Arabic Lamb Flatbread</h2> <h2>Traditional Hummus with Dolmades</h2> <h2>Tega Hill's Mixed Greens Salad</h2> <h2>Heirloom Tomato Fattoush Salad</h2>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="container" id="2k14entr" style="color:black;">
+                        <h1 class="animated fadeInLeft">Choice of Entrée:</h1>  
+                        <div id="menutext" class="animated fadeInUp">
+          <h2>Mushroom Bolognese</h2><h2>Grilled C.A.B. Flat Iron Steak</h2><h2>Grilled Scottish Salmon</h2><h2>Roasted Heritage Pork Tenderloin</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="container" id="2k14des" style="color:black;">
+                        <h1 class="animated fadeInLeft">Choice of Dessert:</h1>
+                        <div id="menutext" class="animated fadeInUp">
+                    <h2>Cake di Chocolate</h2><h2>Lemon Chess Pie</h2><h2>Sticky Toffee Pudding</h2><h2>White Chocolate Crème Brulee</h2><h2>Pistachio and Roasted Pear Baklava</h2><h2>Raspberry Semifreddo</h2><h2>Francisco's Tres Leches Cake</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
-            
-            
-</div>
+    
+    <script>
+        $("#2k14saladshow").click(function(){
+            $("#2k14salad").show();
+            $("#2k14des").hide();
+            $("#2k14entr").hide(); 
+        });
+        $("#2k14entrshow").click(function(){
+            $("#2k14entr").show();
+            $("#2k14salad").hide();
+            $("#2k14des").hide();
+        });
+        $("#2k14desshow").click(function(){
+            $("#2k14des").show();
+            $("#2k14salad").hide();
+            $("#2k14entr").hide();
+        });
+        $(document).ready(function(){
+            $("#2k14salad").show();
+            $("#2k14entr").hide();
+            $("#2k14des").hide();
+        });
+    </script>
     
     <div id="footer"></div>
+    <script src="js/WOW.js"></script>
+    <script>new WOW().init();</script>
 </body>
 </html>
