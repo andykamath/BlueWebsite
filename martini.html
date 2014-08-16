@@ -1,0 +1,420 @@
+<html>
+<head>
+<title></title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script> 
+    $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html"); 
+    });
+    </script> 
+</head>
+<body style="background:url(img/blue.jpg);background-size: 100% 100%;height:100%;width:100%;background-repeat:no-repeat;background-position:center;background-color:#DDE3E3; color:black; background-attachment: fixed">
+    <div id="header"></div>
+    
+    <div class="jumbotron animated wow fadeInUp" data-wow-delay="1s" style="width:100%;background:rgba(500,500,500,0.5)">
+        <div class="container" style="color: gray;width:100%;">
+            <h1>Beer, Spirits, and Cocktails</h1>
+            <div class="row">
+                <div class="col-xs-3">
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1250ms" id="cocktshow"><a>Classic Cocktails</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="seascocktshow"><a>Seasonal Cocktails</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="sparkcocktshow"><a>Sparkling Cocktails</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="specaftshow"><a>Specialty After Dinner Drinks</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="seccrafshow"><a>Specialty Craft Beer</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="draftshow"><a>Draft Beer</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="bottleshow"><a>Bottle Beer</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="smallshow"><a>Small Batch Bourbons</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="fineshow"><a>Fine Whiskey</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="singleandseriousshow"><a>Single Malt and Serious Blend Scotch</a></h3>
+                    <h3 class="animated wow fadeInUp" data-wow-delay="1500ms" id="seriousshow"><a>Serious Blend Scotch</a></h3>
+                </div>
+                
+                <div class="col-md-9" id="cockt">
+                    <div class="container" style="color:black;">
+                        <h1 class="animated fadeInLeft">Classic Cocktails</h1>
+                        <div id="menutext">
+<h3>The Belvedere Walker</h3>
+<p>Belvedere vodka, Johnnie Walker rinse, olive juice splash with blue cheese olives</p>
+<h3>The New Fashion</h3>
+<p>Crown Royal, amaretto, simple syrup and bitters</p>
+<h3>Fire in the City</h3>
+<p>Fireball Whisky, sweet and dry vermouth, bitters</p>
+<h3>En Fuego</h3>
+<p>Serrano-infused tequila, fresh lime and lemon juice, smoked paprika rim</p>
+<h3>Cinnamon Sunset</h3>
+<p>Tequila, fresh OJ, ginger syrup with a cinnamon rim</p>
+<h3>Cucumber Basil</h3>
+<p>St. Germain, gin infused with cucumber and basil</p>
+<h3>Orange and Ginger Cocktail</h3>
+<p>Crown Royal, Grand Marnier, ginger syrup, fresh lime juice and a cinnamon sugar rim</p>
+<h3>Ginger Infusion</h3>
+<p>Ginger-infused vodka, Triple Sec, pomegranate juice</p>
+<h3>Cosmopolitan</h3>
+<p>Absolut Citron, Triple Sec, cranberry, lime juice</p>
+<h3>Marinatini</h3>
+<p>Lemoncello, Grand Marnier, sweet and sour, fresh mint</p>
+<h3>Almond Driver</h3>
+<p>Ciroc Amaretto vodka, orange juice and bitters</p>
+<h3>Lemon Drop</h3>
+<p>Absolut Citron, sweet & sour, sugar rim</p>
+<h3>57 Chevy</h3>
+<p>Southern Comfort, triple sec, pineapple</p>
+<h3>Sour Apple</h3>
+<p>Smirnoff Apple, Apple Pucker, sweet & sour</p>
+<h3>Pomegranate</h3>
+<p>Bacardi, pomegranate, pomegranate juice</p>
+<h3>Washington Apple</h3>
+<p>Crown Royal, Apple Pucker, cranberry</p>
+<h3>Pear-tini</h3>
+<p>Absolut Pear, Midori, sweet & sour</p>
+<h3>9 Below</h3>
+<p>Absolut Vodka, White Cranberry juice, Blue Curacao</p>
+<h3>Bikini Martini</h3>
+<p>Malibu, Absolut, pineapple, grenadine</p>
+<h3>Moulin Rouge</h3>
+<p>Stoli Strawberry, amaretto, fruit juices</p>
+<h3>The Italian Kiss</h3>
+<p>Absolut Peach, peach schnapps, OJ and champagne splash</p>
+<h3>Key Lime Pie</h3>
+<p>Absolut Vanilia, Midori, lime, cream</p>
+<h3>Chocolate Martini</h3>
+<p>Absolut Vanilia, Godiva dark, Bailey’s, splash of cream</p>
+<h3>Espresso Martini</h3>
+<p>Shot of espresso, Absolut Vanilia, Bailey’s, Kahlua</p>
+<h3>Pineapple Upside Down Cake</h3>
+<p>Absolut Vanilia, Malibu rum, a splash of Frangelico, pineapple</p>
+<h3>Apple Ginger</h3>
+<p>Ginger-infused vodka, butterscotch schnapps, apple juice</p>
+                    </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-9">
+                    <div class="container" id="seascockt" style="color:black;">
+                        <h1 class="animated fadeInLeft">Seasonal Cocktails</h1>  
+                        <div id="menutext">
+<h3>Summer Love</h3>
+<p>Strawberry and jalapeno infused vodka with a splash of soda</p>
+<h3>Spring Martini</h3>
+<p>Belvedere vodka, splash of St. Germain, and fresh mint</p>
+<h3>Passion Splash</h3>
+<p>Absolut Vanilia, passion Fruit syrup and soda</p>
+<h3>Creamsicle</h3>
+<p>Stoli Orange, Absolut Vanilia, simple syrup and OJ</p>
+<h3>Tarragon Lemonade</h3>
+<p>Tarragon-infused gin, St. Germain, fresh lemonade and soda</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-9">
+                    <div class="container" id="sparkcockt" style="color:black;">
+                        <h1 class="animated fadeInLeft">Sparkling Cocktails</h1>  
+                        <div id="menutext">
+<h3>French 75</h3>
+<p>Champagne, gin, fresh lemon juice</p>
+<h3>Flirtini</h3>
+<p>Champagne, raspberry schnapps, pineapple</p>
+<h3>Peach- Mosa</h3>
+<p>Champagne, peach schnapps, OJ splash</p>
+<h3>Saint 75</h3>
+<p>Champagne, St. Germain, fresh lemon juice</p>
+<h3>Limon-secco</h3>
+<p>Prosecco, Limoncello, lemon juice</p>
+<h3>Sparkling Hibiscus</h3>
+<p>Prosecco, hibiscus syrup</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="col-md-9">
+                    <div class="container" id="specaft" style="color:black;">
+                        <h1 class="animated fadeInLeft">Specialty After Dinner Drinks</h1>  
+                        <div id="menutext">
+<h3>Nutty Irishmen</h3>
+<p>Bailey’s and Frangelico on the rocks</p>
+<h3>Café Grand Marnier</h3>
+<p>Grand Marnier, espresso, whipped cream, shaved orange peel</p>
+<h3>Café Romano</h3>
+<p>Espresso, brandy, lemon twist</p>
+<h3>Mexican Café</h3>
+<p>Espresso, Bailey’s, Kahlua, tequila, whipped cream</p>
+<h3>Peppermint Patty</h3>
+<p>Espresso, Godiva dark, Bailey’s, peppermint schnapps, over ice and topped with whipped cream</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="col-md-9">
+                    <div class="container" id="seccraf" style="color:black;">
+                        <h1 class="animated fadeInLeft">Specialty Craft Beer</h1>  
+                        <div id="menutext">
+<h3>Stone Arrogant Bastard Ale 220z</h3>
+<p>American Strong Ale 7.2%ABV $12.00</p>
+<h3>Ommegang Three Philosophers</h3>
+<p>Belgian Style Ale with Cherries. 750ml 9.8%ABV $15.00</p>
+<h3>Duvel Belgian Strong Pale Ale 8.5%ABV $10.00</h3>
+<h3>Chimay “Blue Label” Belgian Trappist Ale 9.0%ABV $11.00</h3>
+<h3>Bard’s “Gold” Gluten Free Sorghum Malt Beer $5.00</h3>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="col-md-9">
+                    <div class="container" id="draft" style="color:black;">
+                        <h1 class="animated fadeInLeft">Draft Beer</h1>  
+                        <div id="menutext">
+<h3>Sierra Nevada – Torpedo IPA</h3>
+<h3>Shock Top – Belgian Wheat</h3>
+<h3>Yuengling – Lager </h3>
+<h3>The Olde Mecklenburg Brewery – Copper Ale</h3>
+<h3>Birdsong Brewery- Lazybird Brown Ale</h3>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="col-md-9">
+                    <div class="container" id="bottle" style="color:black;">
+                        <h1 class="animated fadeInLeft">Bottle Beer</h1>  
+                        <div id="menutext">
+<h3>Amstel Light</h3>
+<h3>Heineken</h3>
+<h3>Corona</h3>
+<h3>Miller Light</h3>
+<h3>Bud</h3>
+<h3>Bud Light</h3>
+<h3>Michelob Ultra</h3>
+<h3>Stella Artois</h3>
+<h3>Kaliber (Non Alcoholic)</h3>
+                            </div>
+                        </div>
+                    </div><div class="col-md-9">
+                    <div class="container" id="small" style="color:black;">
+                        <h1 class="animated fadeInLeft">Small Batch Bourbons</h1>  
+                        <div id="menutext">
+<h3>Bookers</h3>
+<h3>Basil Haydens</h3>
+<h3>Blanton’s</h3>
+<h3>Bulleit Bourbon</h3>
+<h3>Knob Creek</h3>
+<h3>Maker’s 46</h3>
+<h3>Woodford Reserve</h3>
+<h3>Wild Turkey 101</h3>
+<h3>Jefferson’s Very Small Batch</h3>
+<h3>Jefferson’s Reserve</h3>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-9">
+                    <div class="container" id="fine" style="color:black;">
+                        <h1 class="animated fadeInLeft">Fine Whiskeys</h1>  
+                        <div id="menutext">
+<h3>Bulleit Rye, Indiana</h3>
+<h3>Gentleman Jack, Tennessee</h3>
+<h3>Templeton Rye, Iowa</h3>
+<h3>Midleton, Ireland</h3>
+<h3>Jameson, Ireland</h3>
+<h3>Redbreast 12y, Ireland</h3>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-9">
+                    <div class="container" id="singleandserious" style="color:black;">
+                        <h1 class="animated fadeInLeft">Single Malt and Serious Blend Scotch</h1>  
+                        <div id="menutext">
+<h3>MacCallan 12y, Highland</h3>
+<h3>MacCallan 18y, Highland</h3>
+<h3>Glenmorangie 10y, Highland</h3>
+<h3>Oban 14y, West Highlands</h3>
+<h3>Belvinie 12y, Speyside</h3>
+<h3>Glenlivet 12y, Speyside</h3>
+<h3>Glenlivet 15y, Speyside</h3>
+<h3>Glenlivet 18y, Speyside</h3>
+<h3>Glenfiddich 12y, Speyside</h3>
+<h3>Lagavulin 16y, Isaly</h3>
+<h3>Laphroig 10y, Islay</h3>
+<h3>Talisker 10y, Isle of Skye</h3>
+                            </div>
+                        </div>
+                    </div>
+                <div class="col-md-9">
+                    <div class="container" id="serious" style="color:black;">
+                        <h1 class="animated fadeInLeft">Serious Blend Scotch</h1>  
+                        <div id="menutext">
+<h3>Johnnie Walker Black</h3>
+<h3>Johnnie Walker Red</h3>
+<h3>Johnnie Walker Blue</h3>
+<h3>Chivas Regal 12y</h3>
+<h3>Dewar’s 12y</h3>
+                            </div>
+                        </div>
+                    </div> 
+        </div>
+    </div>
+</div>
+
+    <script>
+        $("#cocktshow").click(function(){
+            $("#cockt").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#seascocktshow").click(function(){
+            $("#seascockt").show();
+            $("#cockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#sparkcocktshow").click(function(){
+            $("#sparkcockt").show();
+            $("#seascockt").hide();
+            $("#cockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#specaftshow").click(function(){
+            $("#specaft").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#cockt").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#seccrafshow").click(function(){
+            $("#seccraf").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#cockt").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#draftshow").click(function(){
+            $("#draft").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#cockt").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#bottleshow").click(function(){
+            $("#bottle").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#cockt").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#smallshow").click(function(){
+            $("#small").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#cockt").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#fineshow").click(function(){
+            $("#fine").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#cockt").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+        $("#singleandseriousshow").click(function(){
+            $("#singleandserious").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#cockt").hide();
+            $("#serious").hide();
+        });
+        $("#seriousshow").click(function(){
+            $("#serious").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#cockt").hide();
+        });
+        $(document).ready(function(){
+            $("#cockt").show();
+            $("#seascockt").hide();
+            $("#sparkcockt").hide();
+            $("#specaft").hide();
+            $("#seccraf").hide();
+            $("#draft").hide();
+            $("#bottle").hide();
+            $("#small").hide();
+            $("#fine").hide();
+            $("#singleandserious").hide();
+            $("#serious").hide();
+        });
+    </script>
+    
+    <div id="footer"></div>
+    <script src="js/WOW.js"></script>
+    <script>new WOW().init();</script>
+</body>
+</html>
