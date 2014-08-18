@@ -12,6 +12,33 @@ $(function(){
 <body>
 <div id="header"></div>
 <!--Remaining section-->
+
+  <form method="POST" action="http://forms.brace.io/privatedining@bluecharlottedotcomgoeshere.com" style="margin-top: 50px">
+    
+        <div class="form-group">
+            <label for="exampleInputName">Your Name/Organization</label>
+            <input name="name" type="name" class="form-control" id="exampleInputName" placeholder="Enter your name/organization here">
+        </div>
+    
+        <div class="form-group">
+            <label for="exampleInputEmail1">Your email address:</label>
+            <input name="_replyto" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email here">
+        </div>
+    
+        <div class="form-group">
+            <label for="exampleTextArea">What are you interested in?</label>
+            <textarea name="message" class="form-control" rows="5"></textarea>    
+        </div>
+<div class="form-group">
+    <label for="exampleTextArea">Is there anything else you want to mention?</label>
+        <textarea name="message" class="form-control" rows="5"></textarea>    
+    </div>
+
+      
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="hidden" name="_next" value="/submitthanks.html" />
+    </form>
+    
 <div id="footer"></div>
 </body>
 </html>
